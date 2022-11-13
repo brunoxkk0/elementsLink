@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Testes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="base" base>
+    <div id="A" class="square elA" movable link="#F">A</div>
+    <div id="B" class="square elB" movable link="#A">B</div>
+    <div id="C" class="square elC" movable link="#I">C</div>
+    <div id="D" class="square elD" movable link="#E">D</div>
+    <div id="E" class="square elE" movable link="#B">E</div>
+    <div id="F" class="square elF" movable link="#C">F</div>
+    <div id="G" class="square elG" movable link="#H">G</div>
+    <div id="H" class="square elH" movable link="#D">H</div>
+    <div id="I" class="square elI" movable link="#G">I</div>
+</div>
+
+<div>
+    <h4 id="links"></h4>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

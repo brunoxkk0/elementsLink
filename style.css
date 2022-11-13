@@ -1,0 +1,87 @@
+html{
+    background-color: #333333;
+}
+
+.base{
+    position: fixed;
+    background-color: #666666;
+    width: 80vh;
+    height: 80vh;
+    margin: 50px auto auto;
+    border: #000000 solid 2px;
+    border-radius: 10px;
+    z-index: -1000;
+}
+
+.square{
+    position: absolute;
+
+    width: 80px;
+    height: 80px;
+
+    text-align: center;
+    font-weight: bold;
+    font-family: sans-serif;
+    vertical-align: middle;
+    line-height: 80px;
+}
+
+.elA{
+    background-color: rgb(255, 127, 80);
+    top: 91px;
+    left: 200px;
+}
+
+.elB{
+    background-color: rgb(255, 168, 80);
+    top: 144px;
+    left: 24px;
+}
+
+.elC{
+    background-color: rgb(150, 255, 80);
+    top: 503px;
+    left: 59px;
+}
+
+.elD{
+    background-color: rgb(80, 255, 240);
+    top: 630px;
+    left: 605px;
+}
+
+.elE{
+    background-color: rgb(120, 9, 211);
+    top: 21px;
+    left: 540px;
+}
+
+.elF{
+    background-color: rgb(174, 9, 211);
+    top: 242px;
+    left: 217px;
+}
+
+.elG{
+    background-color: rgb(211, 9, 110);
+    top: 191px;
+    left: 630px;
+}
+
+.elH{
+    background-color: rgb(211, 9, 9);
+    top: 568px;
+    left: 324px;
+}
+
+.elI{
+    background-color: rgb(9, 43, 211);
+    top: 326px;
+    left: 403px;
+}
+
+#links{
+    font-family: sans-serif;
+    color: white;
+}
+
