@@ -4,7 +4,8 @@ const links = document.getElementById("links")
 const Links = [];
 
 const STATUS = {
-    refreshTime: 50
+    refreshTime: 50,
+    debug: false
 };
 
 STATUS.refresh = setInterval(() => {
@@ -57,6 +58,8 @@ STATUS.refresh = setInterval(() => {
         pseudoElement.style.borderTopWidth =    `${borderTopWidth}px`
         pseudoElement.style.borderBottomWidth = `${borderBottomWidth}px`
 
+        pseudoElement.style.setProperty('--el-color', STATUS.debug ? (window.getComputedStyle(source).backgroundColor) : 'transparent')
+
     })
 
 }, STATUS.refreshTime)
@@ -94,6 +97,8 @@ document.addEventListener("DOMContentLoaded", () => {
 const createPseudoElement = (link) => {
 
     const pseudo = document.createElement('div')
+
+    pseudo.classList.add('pseudo')
 
     pseudo.id = `${link.source.id}-to-${link.target.id}`
     pseudo.style.position = 'fixed';
@@ -146,6 +151,9 @@ const checkPosition = (elementA, elementB) => {
     return pos
 }
 
+const debug = () => {
+    STATUS.debug = !STATUS.debug;
+}
 
 
 // https://www.w3schools.com/howto/howto_js_draggable.asp

@@ -1,5 +1,6 @@
 html{
     background-color: #333333;
+    --el-color: tranparent;
 }
 
 .base{
@@ -27,55 +28,55 @@ html{
 }
 
 .elA{
-    background-color: rgb(255, 127, 80);
+    background-color: #FF7F50;
     top: 91px;
     left: 200px;
 }
 
 .elB{
-    background-color: rgb(255, 168, 80);
+    background-color: #FFA850;
     top: 144px;
     left: 24px;
 }
 
 .elC{
-    background-color: rgb(150, 255, 80);
+    background-color: #96FF50;
     top: 503px;
     left: 59px;
 }
 
 .elD{
-    background-color: rgb(80, 255, 240);
+    background-color: #50FFF0;
     top: 630px;
     left: 605px;
 }
 
 .elE{
-    background-color: rgb(120, 9, 211);
+    background-color: #7809D3;
     top: 21px;
     left: 540px;
 }
 
 .elF{
-    background-color: rgb(174, 9, 211);
+    background-color: #AE09D3;
     top: 242px;
     left: 217px;
 }
 
 .elG{
-    background-color: rgb(211, 9, 110);
+    background-color: #D3096E;
     top: 191px;
     left: 630px;
 }
 
 .elH{
-    background-color: rgb(211, 9, 9);
+    background-color: #D30909;
     top: 568px;
     left: 324px;
 }
 
 .elI{
-    background-color: rgb(9, 43, 211);
+    background-color: #092BD3;
     top: 326px;
     left: 403px;
 }
@@ -85,3 +86,11 @@ html{
     color: white;
 }
 
+.pseudo::before{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    opacity: .20;
+    background-color: var(--el-color);
+}
